@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #1d1c1c; */
+  /* background-color: #0a0a0a; */
+  /* background-color: #ac6363; */
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  margin: 5px 30px;
+}
+
+main {
+  padding-bottom: 5rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.online {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(29, 197, 29);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1rem;
+  right: 34vw;
+}
+
+.portfolio-summary {
+  /* background-color: green; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-bottom: 2rem;
+}
+
+.portfolio-summary img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.portfolio-summary .user-data {
+  position: relative;
+}
+
+.portfolio-summary h2 {
+  margin-bottom: 5px;
+}
+
+.portfolio-summary-bio {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.portfolio-image {
+  margin-bottom: 10px;
+}
+.user-data {
+  margin-bottom: 20px;
+}
+
+.user-data > div {
+  position: relative;
+}
+
+.user-data p {
+  color: #989696;
+  font-weight: bold;
+}
+
+.featured-projects {
+  margin-bottom: 5rem;
+}
+
+.featured-projects > h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.feature-projects-card {
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+
+  gap: 1rem;
+}
+
+.feature-projects-card::-webkit-scrollbar {
+  display: none;
+}
+
+.featured-card {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.featured-card img {
+  width: 230px;
+  height: 200 px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.featured-card h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.featured-card p {
+  margin-top: 3px;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #989696;
+  /* text-align: start/; */
+}
+
+/* .my-skills{
+  margin-top: 20px;
+}
+
+.my-skills h2{
+  margin-bottom: 20px;
+}
+
+.skill-card{
+ width: 150px;
+ height: 140px;
+ border-radius: 8px;
+ text-align: center;
+ padding: 15px 0;
+ color: chocolate;
+ background-color: black;
+}
+
+
+.skill-card img{
+  width: 80px;
+  height: 80px;
+ filter: brightness(0) saturate(100%) invert(83%) sepia(95%) saturate(1661%) hue-rotate(8deg) brightness(110%) contrast(105%);
+} */
+nav {
+  position: relative;
+}
+
+nav > div {
+  display: flex;
+  background-color: #26292e;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1.5rem;
+}
+
+.nav-bar-card {
+  /* display: flex;
+  flex-direction: column; */
+  text-align: center;
+  padding: 5px 0;
+}
+
+.nav-bar-card img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) saturate(100%) invert(45%) sepia(59%) saturate(0%)
+    hue-rotate(202deg) brightness(112%) contrast(122%);
+}
+
+.nav-bar-card p {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #989696;
+}
+
+/* Projects Page - CSS for POROJECT PAGE   */
+
+/* 
+.projects-page-heading{
+  width: 100vw;
+  text-align: center;
+  padding: .5rem 0 .8rem 0;
+
+  background-color: blue;
+  border-bottom: 1px solid rgb(103, 98, 98);
+  font-size: 1.2rem;
+  font-weight: bold;
+} */
+
+.featured-projects-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featured-project-heading {
+  margin: 0.8rem 0;
+  font-weight: bold;
+}
+
+.featured-projects-page-card {
+  background-color: rgb(39, 38, 65);
+  padding: 0 0 20px 0;
+  border-radius: 8px;
+}
+
+.featured-projects-page-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  /* border-radius: 8px; */
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.featured-projects-page-card h3 {
+  margin: 0 10px;
+  font-size: 1.4rem;
+}
+.featured-projects-page-card p {
+  color: #989696;
+  margin: 0 10px 0.7rem 10px;
+}
+
+.featured-projects-page-card span {
+  background-color: rgb(153, 57, 57);
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.featured-projects-page-card-span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.featured-projects-page-card-nav {
+  background-color: green;
+  padding: 8px 25px;
+  margin: 0 10px;
+  font-weight: bold;
+  border-radius: 12px;
+  font-size: 1.15rem;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+/* About Me Page -- CSS For ABOUT ME */
+
+.download-resume-section {
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem 0.5rem;
+  gap: 5rem;
+  border-bottom: 1px solid #262627;
+  margin-bottom: 1rem;
+}
+
+.download-resume-section > div {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.download-resume-section img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0) saturate(100%) invert(76%) sepia(57%) saturate(6027%)
+    hue-rotate(80deg) brightness(102%) contrast(89%);
+}
+
+.about-me-profile-section {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-me-portfolio-image {
+  margin-bottom: 0.3rem;
+}
+
+.about-me-portfolio-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1dc51d;
+}
+.about-me-profile-section h2 {
+  margin-bottom: 0.1rem;
+}
+.about-me-profile-section p {
+  color: #c2bfbf;
+  font-weight: bold;
+}
+
+.about-me-page-skills-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.about-me-page-skills-section h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.25rem;
+}
+
+.about-me-page-skills-section div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.about-me-page-skills-section span {
+  padding: 5px 15px;
+  background-color: #262627;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.about-me-page-experience-section {
+  margin-bottom: 1.5rem;
+}
+.about-me-page-experience-section h3 {
+  margin-bottom: 0.6rem;
+}
+
+.about-me-page-experience-section h4 {
+  margin-bottom: 0.3rem;
+}
+.about-me-page-experience-section-card p {
+  color: #c2bfbf;
+  font-size: 0.85rem;
+}
+
+.about-me-page-experience-section-card {
+  background-color: #262627;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.about-me-page-philosophy-section h3 {
+  margin-bottom: 0.6rem;
+}
+.about-me-page-philosophy-section p {
+  color: #c2bfbf;
+  font-size: 0.95rem;
+}
+
+/* Contact Page -- CSS for  CONTACT ME */
+
+.contact-me-page-section {
+  color: #c2bfbf;
+  margin-top: 2rem;
+}
+
+.contact-me-page-section h3 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.contact-me-page-section p {
+  font-size: 0.95rem;
+}
+
+.contact-me-page-section-get-in-touch {
+  margin-bottom: 1.5rem;
+}
+.contact-me-page-section-get-in-touch > div {
+  margin-bottom: 1.2rem;
+}
+
+.contact-me-page-section-get-in-touch-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-me-page-section input {
+  background-color: #262627;
+  height: 40px;
+  border: none;
+  padding: 0 0 0 0.5rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.contact-me-page-section textarea {
+  background-color: #262627;
+  height: 140px;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.contact-me-page-section button {
+  background-color: #1dc51d;
+  border: transparent;
+  height: 2.6rem;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* .contact-me-page-section-connect-with-me {
+
+} */
+.contact-me-page-section-connect-with-me-card {
+  /* position: relative; */
+  background-color: #262627;
+  border-radius: 8px;
+  padding: 0.7rem 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact-me-page-section-connect-with-me-card > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: .2rem; */
+}
+.contact-me-page-section-connect-with-me-card > div > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.contact-me-page-section-connect-with-me-card > div > div > span {
+  background-color: #1e1e1f;
+  padding: 0.15rem 0.35rem 0 0.35rem;
+  border-radius: 8px;
+}
+.contact-me-page-section-connect-with-me-card > div > div div {
+  position: relative;
+  bottom: 0.1rem;
+}
+
+.contact-me-page-section-connect-with-me-card > div div {
+  font-size: 1.1rem;
+  /* font-weight: bold; */
+  color: white;
+  /* align-items: center; */
+}
+.contact-me-page-section-connect-with-me-card > div > span {
+  position: relative;
+  top: 0.3rem;
+}
+/* 
+.about-me-page-experience-section-card span{
+  width: 40px;
+  height: 40px;
+} */
+
+.contact-me-page-section-connect-with-me-card img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  object-position: center;
+
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(16%)
+    hue-rotate(312deg) brightness(105%) contrast(100%);
+}
+
+#contact-metwitter-img {
+  width: 20px;
+  height: 20px;
+}
